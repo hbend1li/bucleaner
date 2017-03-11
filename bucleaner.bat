@@ -1,6 +1,7 @@
 @echo off
 @cd \
-@echo maked by hbendali 2017/03/09 b17
+@echo maked by hbendali 2017/03/11 b18
+@echo https://github.com/hbendalibraham/bucleaner
 @echo -----------------------------------------------
 @pushd "%CD%"
 @CD /D "%~dp0"
