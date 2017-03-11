@@ -471,17 +471,7 @@
 @attrib -r -s -a -h *.*
 @for /R %%a in (.) do @attrib -h -r -s -a "%%a"
 
-
-@echo - Move hiden folder --------------------
-@move /y \?\*.* \ 
-
 :eos
 @echo ------------------- [ The END ]
-
-@IF EXIST "%CurentScript%\ClamAv\clamscan.exe" (
-	@choice /c ny /t 5 /d n /m "ClamAV?"
-	@if ERRORLEVEL 1 (
-		@%CurentScript%\ClamAv\clamscan.exe -or --bell --remove \
-	)
-)
 @echo 
+@pause > nul
