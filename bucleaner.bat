@@ -423,7 +423,7 @@ set dsf=%dsf% zipped_files.exe
 set dsf=%dsf% %windir%\showmyhey.exe
 set dsf=%dsf% %windir%\YahooMessenger.exe
 
-echo - Delete suspect file. 
+echo - Search and destroy suspect file. 
 del %dsf% /F /Q /S
 
 echo -> Delete System Volume Information / RECYCLER
