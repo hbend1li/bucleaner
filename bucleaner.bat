@@ -1,6 +1,6 @@
 @echo off
 if "%cd:~0,1%"=="C" goto end
-echo maked by hbendali 2017/06/27 b18 usb
+echo maked by hbendali 2017/06/27 b18 usb build 2
 echo https://github.com/hbendalibraham/bucleaner
 echo -----------------------------------------------
 
