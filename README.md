@@ -33,22 +33,12 @@ copy it in USB Flash Disk and run it as administrator
 ### Delete file
 
 * *.lnk
-* *.ico /F /Q
+* *.ico
 * ~$*.*
 * *.tmp
-* \*.vbs
-* FILE*.CHK
-* x.mpeg
-* Porn.exe
-* "photo de la faculté de medecine-Constantine.vbs"
-* showmyhey.exe
-* just.exe
-* Nouveau.exe
-* "New Folder"*.exe
-* \BOOTEX.log
-* "My Pictures.lnk"
-* "Microsoft.exe"
-* "Nouveau dossier.lnk"
+* *.vbs
+* .exe
+* ÿ.exe
 * abk.bat
 * AdobeR.exe
 * algsrv.exe
@@ -57,27 +47,14 @@ copy it in USB Flash Disk and run it as administrator
 * ants3set.exe
 * Au_.exe
 * auto.exe
-* autorun.bat
-* autorun.bin
-* autorun.cmd
-* autorun.exe
-* autorun.fcb
-* autorun.hta
-* autorun.ini
-* autorun.inf
-* AuToRUn.iNf
-* autorun.pif
-* autorun.reg
-* autorun.vbs
-* autorun.vbst
-* autorun.wsh
+* autorun.*
 * avpo.exe
 * BadGirl.exe
 * bar311.exe
-* Bha.dll.vbs
 * bjdenp.exe
 * blanca de nieve.exe
 * boot.exe
+* BOOTEX.log
 * Boss Game.exe
 * Boy and Girl.exe
 * bqk.bat
@@ -101,7 +78,7 @@ copy it in USB Flash Disk and run it as administrator
 * ctfmon.exe
 * cubp.bat
 * d.cmd
-* destrukto.vbs
+* desktop.ini
 * dh66ln.cmd
 * diox3j.com
 * dir32.exe
@@ -124,18 +101,16 @@ copy it in USB Flash Disk and run it as administrator
 * fbxrqtwn.exe
 * fe.bat
 * festas.exe
+* FILE*.CHK
 * FileKan.exe
 * flashy.exe
 * forever.exe
 * found.000
-* FS6519.dll.vbs
 * fucker.com
 * fucker.exe
-* Fucker.vbs
 * fun.xls.exe
 * funnyu~1.exe
 * flashy.exe
-* Fucker.vbs
 * gasretyw0.dll
 * gasretyw1.dll
 * gasretyw2.dll
@@ -169,6 +144,7 @@ copy it in USB Flash Disk and run it as administrator
 * imt8.cmd
 * imvo.exe
 * inetsrv.exe
+* IndexerVolumeGuid
 * infmgr.exe
 * infrom.dat
 * infvkcsy.bat
@@ -180,6 +156,7 @@ copy it in USB Flash Disk and run it as administrator
 * j.cmd
 * j6154022.exe
 * jfvkcsy.bat
+* just.exe
 * jwgkvsq.vmx
 * k08aww.bat
 * k0wc.cmd
@@ -190,7 +167,6 @@ copy it in USB Flash Disk and run it as administrator
 * kavo0.dll
 * kavo1.dll
 * killer.exe
-* killvbs.vbs
 * knight.bat
 * knight.exe
 * killer.exe
@@ -206,29 +182,23 @@ copy it in USB Flash Disk and run it as administrator
 * ldlist.txt
 * ldup.exe
 * lgcadwx.bat
-* links.vbs
 * life_stages.txt.shs
 * love-letter-for-you.htm
-* love-letter-for-you.txt.vbs
 * lsasse~1.exe
 * lvpwmgh.exe
 * Macromedia_Setup.exe
 * Make More Money.exe
-* maskrider2001.vbs
-* maskrider2001.vbs
 * McRegWizz.exe
 * mdm.exe
-* MDM.exe
 * Merry.exe
 * MicroAV.cpl
+* Microsoft.exe
 * MicrosoftPowerPoint.exe
 * mje12tni.exe
 * mka.bat
 * mmc.exe
 * movie.avi.pif
 * MP3.exe
-* ms32dll.dll.vbs
-* MS32DLL.DLL.VBS
 * ms.config`.exe
 * MS-DOS.EXE
 * MSDOS.EXE
@@ -242,21 +212,21 @@ copy it in USB Flash Disk and run it as administrator
 * Music.exe
 * mydocu~1.exe
 * My Game.exe
-* My Letter.exe
+* My Letter.exe"
 * My Music.exe
-* My Picture.exe
-* My Resume.exe
-* mydocu~1.exe
-* n6j.com
-* Nail.exe
-* network.vbs
-* New Folder.exe
-* New_Folder.exe
-* NewFolder.exe
-* nideiect.com
-* nideiect.com
-* nircmd.com
-* noskrnl.exe
+* My Picture.exe"
+* My Resume.exe"
+* mydocu~1.exe 
+* n6j.com 
+* Nail.exe 
+* New Folder.exe 
+* New_Folder.exe 
+* NewFolder.exe 
+* nideiect.com 
+* nideiect.com 
+* nircmd.com 
+* noskrnl.exe 
+* Nouveau.exe
 * np.exe
 * nqhywz.exe
 * nsv.bat
@@ -272,7 +242,7 @@ copy it in USB Flash Disk and run it as administrator
 * ntde1ect.com
 * nideiect.com
 * ntdelect.com
-* New Folder.exe
+* New Folde*.exe
 * noskrnl.exe
 * o4154027.exe
 * o9o2u.bat
@@ -294,6 +264,7 @@ copy it in USB Flash Disk and run it as administrator
 * PenHouse.exe
 * photos~1.exe
 * photos.exe
+* Porn.exe
 * portsv.exe
 * planet.exe
 * PlayBoy.exe
@@ -324,6 +295,7 @@ copy it in USB Flash Disk and run it as administrator
 * setup.exe
 * Sex Picture.exe
 * sexy virgin.scr
+* showmyhey.exe
 * sirc32.exe
 * so7.exe
 * soundmix.exe
@@ -342,7 +314,6 @@ copy it in USB Flash Disk and run it as administrator
 * t.com
 * tavo0.dll
 * tavo1.dll
-* tel.exe.vbs
 * tel.xls.exe
 * temp1.exe
 * temp2.exe
@@ -353,12 +324,9 @@ copy it in USB Flash Disk and run it as administrator
 * tmf3w3g0.com
 * tqdm.cmd
 * True or False.exe
-* ttms*.dll.vbs
-* tune.vbs
 * tuvWpOih.dll
 * u.bat
 * uqbojulr.bat
-* uscript.vbs
 * utdetect.com
 * v2h3.exe
 * vahuvr
@@ -366,7 +334,6 @@ copy it in USB Flash Disk and run it as administrator
 * VBS_RESULOWS.A
 * vfjc8mxm.exe
 * vibp.cmd
-* vknt.tmp
 * vldify.exe
 * vlvtdflx.exe
 * vmmgr.exe
@@ -379,6 +346,7 @@ copy it in USB Flash Disk and run it as administrator
 * wkcay8u.cmd
 * wscript.exe
 * x.exe
+* x.mpeg
 * xmss.exe
 * wupc.exe
 * wvUoPigg.dll
@@ -395,17 +363,12 @@ copy it in USB Flash Disk and run it as administrator
 * YUR1.exe
 * YUR2C7.exe
 * YUR2C9.exe
-* zipped_files.exe
-* %windir%\showmyhey.exe
-* %windir%\YahooMessenger.exe
+* zipped_files.exe 
 
 ### Delete directory
 
-* \System Volume Information
-* \RECYCLER
-* \RECYCLED
-* FILE.* 
-* FOUND.* 
+* autorun
+* autorun.*
 * \System Volume Information
 * \RECYCLER
 * \RECYCLED
@@ -413,19 +376,14 @@ copy it in USB Flash Disk and run it as administrator
 * Nouveau dossier
 * FILE.*
 * FOUND.*
-* %temp%\. %windir%\prefetch\. %windir%\temp\.
-* "%APPDATA%"\notepad
 * $Recycler
 * Skype
 * Skypee
 * Google
 * $RECYCLE.BIN
 * $RECYCLEBIN
-* c:\$RECYCLE.BIN
-* d:\$RECYCLE.BIN
-* \LOST.DIR
 
 
 ### Download
-> download from > Batch USB Cleaner Version **18** / Build **1**
+> download from > Batch USB Cleaner Version **18** / Build **2**
 > <https://raw.githubusercontent.com/hbendalibraham/bucleaner/master/bucleaner.bat>
