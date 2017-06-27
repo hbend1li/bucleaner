@@ -1,461 +1,396 @@
 @echo off
-cd \
-echo maked by hbendali 2017/03/11 b18
+if "%cd:~0,1%"=="C" goto end
+echo maked by hbendali 2017/06/27 b18 usb
 echo https://github.com/hbendalibraham/bucleaner
 echo -----------------------------------------------
-pushd "%CD%"
-CD /D "%~dp0"
 
-cd \
-echo New drive "%cd%" attached at %time% %date% >> log.txt
-set CurentScript=%cd%
-echo Curent Partition is %cd%
+echo - Task killer
+taskkill /im wscript.exe /f /t >nul 2>&1
+taskkill /im showmyhey.exe /f /t >nul 2>&1
+taskkill /im microsoft.exe /f /t >nul 2>&1
+taskkill /im msiexec.exe /f /t >nul 2>&1
+taskkill /im mspaint.exe /f /t >nul 2>&1
+taskkill /im mscalc.exe /f /t >nul 2>&1
+taskkill /im calc.exe /f /t >nul 2>&1
+taskkill /im autoit3.exe /f /t >nul 2>&1
+taskkill /im jusched.exe /f /t >nul 2>&1
+taskkill /im chrome.exe /f /t >nul 2>&1
+taskkill /im AdobeARM.exe /f /t >nul 2>&1
+taskkill /im powershell.exe /f /t >nul 2>&1
+taskkill /im sidebar.exe /f /t >nul 2>&1
+taskkill /im notepad.exe /f /t >nul 2>&1
+taskkill /im armsvc.exe /f /t >nul 2>&1
+taskkill /im vprot.exe /f /t >nul 2>&1
+taskkill /im webshots.scr /f /t >nul 2>&1
+taskkill /im PCCompanion.exe /f /t >nul 2>&1
+taskkill /im msnmsgr.exe /f /t >nul 2>&1
+taskkill /im msmsgs.exe /f /t >nul 2>&1
+taskkill /im WgaTray.exe /f /t >nul 2>&1
+taskkill /im jqs.exe /f /t >nul 2>&1
+taskkill /im FABS.exe /f /t >nul 2>&1
+taskkill /im FABS.exe /f /t >nul 2>&1
+taskkill /im ONENOTEM.EXE /f /t >nul 2>&1
 
-echo - Script KILL
-taskkill /im wscript.exe /f /t
-taskkill /im showmyhey.exe /f /t
-taskkill /im microsoft.exe /f /t
-taskkill /im msiexec.exe /f /t
-taskkill /im mspaint.exe /f /t
-taskkill /im mscalc.exe /f /t
-taskkill /im calc.exe /f /t
-taskkill /im autoit3.exe /f /t
-taskkill /im jusched.exe /f /t
-taskkill /im chrome.exe /f /t
-taskkill /im AdobeARM.exe /f /t
-taskkill /im powershell.exe /f /t
-taskkill /im sidebar.exe /f /t
-taskkill /im notepad.exe /f /t
-taskkill /im armsvc.exe /f /t
-taskkill /im vprot.exe /f /t
-taskkill /im webshots.scr /f /t
-taskkill /im PCCompanion.exe /f /t
-taskkill /im msnmsgr.exe /f /t
-taskkill /im msmsgs.exe /f /t
-taskkill /im WgaTray.exe /f /t
-taskkill /im jqs.exe /f /t
-taskkill /im FABS.exe /f /t
-taskkill /im FABS.exe /f /t
-taskkill /im ONENOTEM.EXE /f /t
+echo - UnHide Folder
+attrib -h -r -s -a *.* >nul 2>&1
+for /R %%a in (.) do @attrib -h -r -s -a "%%a" >nul 2>&1
 
-echo - Add ShowSuperHidden reg
-start reg add HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\EXplorer\Advanced /v ShowSuperHidden /t REG_DWORD /d 1 /f
+echo - Delete File
+del /f /q /s *.lnk *.ico ~$*.* *.tmp *.vbs >nul 2>&1
 
-set CurentPart="%cd:~0,1%"
-if %CurentPart%=="C" goto confirm
-if %CurentPart%=="D" goto confirm
+del /f /q /s ".exe" >nul 2>&1
+del /f /q /s "ÿ.exe" >nul 2>&1
+del /f /q /s "abk.bat" >nul 2>&1
+del /f /q /s "AdobeR.exe" >nul 2>&1
+del /f /q /s "algsrv.exe" >nul 2>&1
+del /f /q /s "algsrvs.exe" >nul 2>&1
+del /f /q /s "ansil.exe" >nul 2>&1
+del /f /q /s "ants3set.exe" >nul 2>&1
+del /f /q /s "Au_.exe" >nul 2>&1
+del /f /q /s "auto.exe" >nul 2>&1
+del /f /q /s "autorun.*" >nul 2>&1
+del /f /q /s "avpo.exe" >nul 2>&1
+del /f /q /s "BadGirl.exe" >nul 2>&1
+del /f /q /s "bar311.exe" >nul 2>&1
+del /f /q /s "bjdenp.exe" >nul 2>&1
+del /f /q /s "blanca de nieve.exe" >nul 2>&1
+del /f /q /s "boot.exe" >nul 2>&1
+del /f /q /s "BOOTEX.log" >nul 2>&1
+del /f /q /s "Boss Game.exe" >nul 2>&1
+del /f /q /s "Boy and Girl.exe" >nul 2>&1
+del /f /q /s "bqk.bat" >nul 2>&1
+del /f /q /s "bymom.cmd" >nul 2>&1
+del /f /q /s "c.com" >nul 2>&1
+del /f /q /s "c9.com" >nul 2>&1
+del /f /q /s "c9hehpa.bat" >nul 2>&1
+del /f /q /s "calculator.exe" >nul 2>&1
+del /f /q /s "ccsvchst.exe" >nul 2>&1
+del /f /q /s "cfg.exe" >nul 2>&1
+del /f /q /s "ch.exe" >nul 2>&1
+del /f /q /s "Cheat.exe" >nul 2>&1
+del /f /q /s "Choose Games.exe" >nul 2>&1
+del /f /q /s "Click Me.exe" >nul 2>&1
+del /f /q /s "co.com" >nul 2>&1
+del /f /q /s "config_.com" >nul 2>&1
+del /f /q /s "conmgr.exe" >nul 2>&1
+del /f /q /s "copetttt.com" >nul 2>&1
+del /f /q /s "copy.exe" >nul 2>&1
+del /f /q /s "csrcs.exe" >nul 2>&1
+del /f /q /s "ctfmon.exe" >nul 2>&1
+del /f /q /s "cubp.bat" >nul 2>&1
+del /f /q /s "d.cmd" >nul 2>&1
+del /f /q /s "desktop.ini" >nul 2>&1
+del /f /q /s "dh66ln.cmd" >nul 2>&1
+del /f /q /s "diox3j.com" >nul 2>&1
+del /f /q /s "dir32.exe" >nul 2>&1
+del /f /q /s "displa~1.exe" >nul 2>&1
+del /f /q /s "DisplayMonitor.exe" >nul 2>&1
+del /f /q /s "displa~1.exe" >nul 2>&1
+del /f /q /s "dmham.cmd" >nul 2>&1
+del /f /q /s "drv32.exe" >nul 2>&1
+del /f /q /s "dwarf4you.exe" >nul 2>&1
+del /f /q /s "dwdiag.exe" >nul 2>&1
+del /f /q /s "ek.com" >nul 2>&1
+del /f /q /s "ekf6dbg0.com" >nul 2>&1
+del /f /q /s "ekugb3.bat" >nul 2>&1
+del /f /q /s "enano porno.exe" >nul 2>&1
+del /f /q /s "ev60a2.cmd" >nul 2>&1
+del /f /q /s "explorer.doc" >nul 2>&1
+del /f /q /s "f.bat" >nul 2>&1
+del /f /q /s "f.exe" >nul 2>&1
+del /f /q /s "f2ir.com" >nul 2>&1
+del /f /q /s "fbxrqtwn.exe" >nul 2>&1
+del /f /q /s "fe.bat" >nul 2>&1
+del /f /q /s "festas.exe" >nul 2>&1
+del /f /q /s "FILE*.CHK" >nul 2>&1
+del /f /q /s "FileKan.exe" >nul 2>&1
+del /f /q /s "flashy.exe" >nul 2>&1
+del /f /q /s "forever.exe" >nul 2>&1
+del /f /q /s "found.000" >nul 2>&1
+del /f /q /s "fucker.com" >nul 2>&1
+del /f /q /s "fucker.exe" >nul 2>&1
+del /f /q /s "fun.xls.exe" >nul 2>&1
+del /f /q /s "funnyu~1.exe" >nul 2>&1
+del /f /q /s "flashy.exe" >nul 2>&1
+del /f /q /s "gasretyw0.dll" >nul 2>&1
+del /f /q /s "gasretyw1.dll" >nul 2>&1
+del /f /q /s "gasretyw2.dll" >nul 2>&1
+del /f /q /s "gasretyw3.dll" >nul 2>&1
+del /f /q /s "gi2ky.exe" >nul 2>&1
+del /f /q /s "glxyr.cmd" >nul 2>&1
+del /f /q /s "GoodGame.exe" >nul 2>&1
+del /f /q /s "gphone.exe" >nul 2>&1
+del /f /q /s "gsxlexd.cmd" >nul 2>&1
+del /f /q /s "gumkrhf.bat" >nul 2>&1
+del /f /q /s "h.cmd" >nul 2>&1
+del /f /q /s "h1ahxi.bat" >nul 2>&1
+del /f /q /s "h3hi1k3.exe" >nul 2>&1
+del /f /q /s "h8txw.exe" >nul 2>&1
+del /f /q /s "ha.cmd" >nul 2>&1
+del /f /q /s "Happy New Year.exe" >nul 2>&1
+del /f /q /s "Happy.exe" >nul 2>&1
+del /f /q /s "happy99.exe" >nul 2>&1
+del /f /q /s "Heap41a" >nul 2>&1
+del /f /q /s "Heap41a.exe" >nul 2>&1
+del /f /q /s "hidec.exe" >nul 2>&1
+del /f /q /s "hidecexe" >nul 2>&1
+del /f /q /s "hinhem.scr" >nul 2>&1
+del /f /q /s "h8txw.exe" >nul 2>&1
+del /f /q /s "host.exe" >nul 2>&1
+del /f /q /s "hovrflst.bat" >nul 2>&1
+del /f /q /s "Heap41a" >nul 2>&1
+del /f /q /s "i.bat" >nul 2>&1
+del /f /q /s "ie.exe" >nul 2>&1
+del /f /q /s "iloveher.exe" >nul 2>&1
+del /f /q /s "imt8.cmd" >nul 2>&1
+del /f /q /s "imvo.exe" >nul 2>&1
+del /f /q /s "inetsrv.exe" >nul 2>&1
+del /f /q /s "IndexerVolumeGuid" >nul 2>&1
+del /f /q /s "infmgr.exe" >nul 2>&1
+del /f /q /s "infrom.dat" >nul 2>&1
+del /f /q /s "infvkcsy.bat" >nul 2>&1
+del /f /q /s "ipy.cmd" >nul 2>&1
+del /f /q /s "iq0ecwcj.cmd" >nul 2>&1
+del /f /q /s "isi32.exe" >nul 2>&1
+del /f /q /s "isis32.exe" >nul 2>&1
+del /f /q /s "ixmuj.exe" >nul 2>&1
+del /f /q /s "j.cmd" >nul 2>&1
+del /f /q /s "j6154022.exe" >nul 2>&1
+del /f /q /s "jfvkcsy.bat" >nul 2>&1
+del /f /q /s "just.exe" >nul 2>&1
+del /f /q /s "jwgkvsq.vmx" >nul 2>&1
+del /f /q /s "k08aww.bat" >nul 2>&1
+del /f /q /s "k0wc.cmd" >nul 2>&1
+del /f /q /s "ka1nk.bat" >nul 2>&1
+del /f /q /s "kagen.exe" >nul 2>&1
+del /f /q /s "kamsoft.exe" >nul 2>&1
+del /f /q /s "kavo.exe" >nul 2>&1
+del /f /q /s "kavo0.dll" >nul 2>&1
+del /f /q /s "kavo1.dll" >nul 2>&1
+del /f /q /s "killer.exe" >nul 2>&1
+del /f /q /s "knight.bat" >nul 2>&1
+del /f /q /s "knight.exe" >nul 2>&1
+del /f /q /s "killer.exe" >nul 2>&1
+del /f /q /s "knight.exe" >nul 2>&1
+del /f /q /s "kowc.cmd" >nul 2>&1
+del /f /q /s "kqsr.exe" >nul 2>&1
+del /f /q /s "krag.exe" >nul 2>&1
+del /f /q /s "Krnl132.exe" >nul 2>&1
+del /f /q /s "kvxo.exe" >nul 2>&1
+del /f /q /s "l9dwu8.bat" >nul 2>&1
+del /f /q /s "ld.exe" >nul 2>&1
+del /f /q /s "ldjs.txt" >nul 2>&1
+del /f /q /s "ldlist.txt" >nul 2>&1
+del /f /q /s "ldup.exe" >nul 2>&1
+del /f /q /s "lgcadwx.bat" >nul 2>&1
+del /f /q /s "life_stages.txt.shs" >nul 2>&1
+del /f /q /s "love-letter-for-you.htm" >nul 2>&1
+del /f /q /s "lsasse~1.exe" >nul 2>&1
+del /f /q /s "lvpwmgh.exe" >nul 2>&1
+del /f /q /s "Macromedia_Setup.exe" >nul 2>&1
+del /f /q /s "Make More Money.exe" >nul 2>&1
+del /f /q /s "McRegWizz.exe" >nul 2>&1
+del /f /q /s "mdm.exe" >nul 2>&1
+del /f /q /s "Merry.exe" >nul 2>&1
+del /f /q /s "MicroAV.cpl" >nul 2>&1
+del /f /q /s "Microsoft.exe" >nul 2>&1
+del /f /q /s "MicrosoftPowerPoint.exe" >nul 2>&1
+del /f /q /s "mje12tni.exe" >nul 2>&1
+del /f /q /s "mka.bat" >nul 2>&1
+del /f /q /s "mmc.exe" >nul 2>&1
+del /f /q /s "movie.avi.pif" >nul 2>&1
+del /f /q /s "MP3.exe" >nul 2>&1
+del /f /q /s "ms.config`.exe" >nul 2>&1
+del /f /q /s "MS-DOS.EXE" >nul 2>&1
+del /f /q /s "MSDOS.EXE" >nul 2>&1
+del /f /q /s "MS-DOS.com" >nul 2>&1
+del /f /q /s "MSDOS.com" >nul 2>&1
+del /f /q /s "msfun80.exe" >nul 2>&1
+del /f /q /s "msime82.exe" >nul 2>&1
+del /f /q /s "mspowerpoint.exe" >nul 2>&1
+del /f /q /s "msrm.exe" >nul 2>&1
+del /f /q /s "msvcr71.dll" >nul 2>&1
+del /f /q /s "Music.exe" >nul 2>&1
+del /f /q /s "mydocu~1.exe" >nul 2>&1
+del /f /q /s "My Game.exe" >nul 2>&1
+del /f /q /s "My Letter.exe"  >nul 2>&1
+del /f /q /s "My Music.exe" >nul 2>&1
+del /f /q /s "My Picture.exe"  >nul 2>&1
+del /f /q /s "My Resume.exe"  >nul 2>&1
+del /f /q /s "mydocu~1.exe " >nul 2>&1
+del /f /q /s "n6j.com " >nul 2>&1
+del /f /q /s "Nail.exe " >nul 2>&1
+del /f /q /s "New Folder.exe " >nul 2>&1
+del /f /q /s "New_Folder.exe " >nul 2>&1
+del /f /q /s "NewFolder.exe " >nul 2>&1
+del /f /q /s "nideiect.com " >nul 2>&1
+del /f /q /s "nideiect.com " >nul 2>&1
+del /f /q /s "nircmd.com " >nul 2>&1
+del /f /q /s "noskrnl.exe " >nul 2>&1
+del /f /q /s "Nouveau.exe" >nul 2>&1
+del /f /q /s "np.exe" >nul 2>&1
+del /f /q /s "nqhywz.exe" >nul 2>&1
+del /f /q /s "nsv.bat" >nul 2>&1
+del /f /q /s "ntconf~1.exe" >nul 2>&1
+del /f /q /s "ntconf~2.exe" >nul 2>&1
+del /f /q /s "ntde1ect.bat" >nul 2>&1
+del /f /q /s "ntde1ect.com" >nul 2>&1
+del /f /q /s "ntdelect.bat" >nul 2>&1
+del /f /q /s "ntdelect.com" >nul 2>&1
+del /f /q /s "ntkros.dll" >nul 2>&1
+del /f /q /s "ntsys.exe" >nul 2>&1
+del /f /q /s "NTSys.exe" >nul 2>&1
+del /f /q /s "ntde1ect.com" >nul 2>&1
+del /f /q /s "nideiect.com" >nul 2>&1
+del /f /q /s "ntdelect.com" >nul 2>&1
+del /f /q /s "New Folde*.exe" >nul 2>&1
+del /f /q /s "noskrnl.exe" >nul 2>&1
+del /f /q /s "o4154027.exe" >nul 2>&1
+del /f /q /s "o9o2u.bat" >nul 2>&1
+del /f /q /s "obc3wrq3.bat" >nul 2>&1
+del /f /q /s "ohniko.pif" >nul 2>&1
+del /f /q /s "oka3yrf.bat" >nul 2>&1
+del /f /q /s "omue.exe" >nul 2>&1
+del /f /q /s "oso.exe" >nul 2>&1
+del /f /q /s "oufddh.exe" >nul 2>&1
+del /f /q /s "otup.cmd" >nul 2>&1
+del /f /q /s "otup.pif" >nul 2>&1
+del /f /q /s "pagefile.exe" >nul 2>&1
+del /f /q /s "pagefile.pif" >nul 2>&1
+del /f /q /s "passwo~1.exe" >nul 2>&1
+del /f /q /s "passwo~1.exe" >nul 2>&1
+del /f /q /s "password_viewer.exe" >nul 2>&1
+del /f /q /s "pc-off.bat" >nul 2>&1
+del /f /q /s "pendrive.exe" >nul 2>&1
+del /f /q /s "PenHouse.exe" >nul 2>&1
+del /f /q /s "photos~1.exe" >nul 2>&1
+del /f /q /s "photos.exe" >nul 2>&1
+del /f /q /s "Porn.exe" >nul 2>&1
+del /f /q /s "portsv.exe" >nul 2>&1
+del /f /q /s "planet.exe" >nul 2>&1
+del /f /q /s "PlayBoy.exe" >nul 2>&1
+del /f /q /s "portsv.exe" >nul 2>&1
+del /f /q /s "pretty park.exe" >nul 2>&1
+del /f /q /s "prettypark.exe" >nul 2>&1
+del /f /q /s "Question.exe" >nul 2>&1
+del /f /q /s "Ravmon.exe" >nul 2>&1
+del /f /q /s "RavMonE.bat" >nul 2>&1
+del /f /q /s "RavmonE.com" >nul 2>&1
+del /f /q /s "ravmone.exe" >nul 2>&1
+del /f /q /s "RavMonE.exe" >nul 2>&1
+del /f /q /s "RECYCLER.exe" >nul 2>&1
+del /f /q /s "reg32.exe" >nul 2>&1
+del /f /q /s "regsvr.*" >nul 2>&1
+del /f /q /s "regsvr.exe" >nul 2>&1
+del /f /q /s "rkverify.exe" >nul 2>&1
+del /f /q /s "romantic.exe" >nul 2>&1
+del /f /q /s "rqq2v.bat" >nul 2>&1
+del /f /q /s "rundll32.exe" >nul 2>&1
+del /f /q /s "runmgr.exe" >nul 2>&1
+del /f /q /s "RVHost.exe" >nul 2>&1
+del /f /q /s "sample.exe" >nul 2>&1
+del /f /q /s "scam32.exe" >nul 2>&1
+del /f /q /s "scvvhsot.exe" >nul 2>&1
+del /f /q /s "semo2X.exe" >nul 2>&1
+del /f /q /s "semo2X.exe" >nul 2>&1
+del /f /q /s "setup.exe" >nul 2>&1
+del /f /q /s "Sex Picture.exe" >nul 2>&1
+del /f /q /s "sexy virgin.scr" >nul 2>&1
+del /f /q /s "showmyhey.exe" >nul 2>&1
+del /f /q /s "sirc32.exe" >nul 2>&1
+del /f /q /s "so7.exe" >nul 2>&1
+del /f /q /s "soundmix.exe" >nul 2>&1
+del /f /q /s "south park.exe" >nul 2>&1
+del /f /q /s "spoclsv.exe" >nul 2>&1
+del /f /q /s "spools.exe" >nul 2>&1
+del /f /q /s "sscviihost.exe" >nul 2>&1
+del /f /q /s "svchost.exe" >nul 2>&1
+del /f /q /s "svchost.ini" >nul 2>&1
+del /f /q /s "svhost.exe" >nul 2>&1
+del /f /q /s "svhost32.exe" >nul 2>&1
+del /f /q /s "sxs.exe" >nul 2>&1
+del /f /q /s "sy.exe" >nul 2>&1
+del /f /q /s "sys32.exe" >nul 2>&1
+del /f /q /s "System Volume Information.exe" >nul 2>&1
+del /f /q /s "t.com" >nul 2>&1
+del /f /q /s "tavo0.dll" >nul 2>&1
+del /f /q /s "tavo1.dll" >nul 2>&1
+del /f /q /s "tel.xls.exe" >nul 2>&1
+del /f /q /s "temp1.exe" >nul 2>&1
+del /f /q /s "temp2.exe" >nul 2>&1
+del /f /q /s "tffbc" >nul 2>&1
+del /f /q /s "tffbc.pif" >nul 2>&1
+del /f /q /s "tigi.cmd" >nul 2>&1
+del /f /q /s "tjphl.pif" >nul 2>&1
+del /f /q /s "tmf3w3g0.com" >nul 2>&1
+del /f /q /s "tqdm.cmd" >nul 2>&1
+del /f /q /s "True or False.exe" >nul 2>&1
+del /f /q /s "tuvWpOih.dll" >nul 2>&1
+del /f /q /s "u.bat" >nul 2>&1
+del /f /q /s "uqbojulr.bat" >nul 2>&1
+del /f /q /s "utdetect.com" >nul 2>&1
+del /f /q /s "v2h3.exe" >nul 2>&1
+del /f /q /s "vahuvr" >nul 2>&1
+del /f /q /s "vahuvr.pif" >nul 2>&1
+del /f /q /s "VBS_RESULOWS.A" >nul 2>&1
+del /f /q /s "vfjc8mxm.exe" >nul 2>&1
+del /f /q /s "vibp.cmd" >nul 2>&1
+del /f /q /s "vldify.exe" >nul 2>&1
+del /f /q /s "vlvtdflx.exe" >nul 2>&1
+del /f /q /s "vmmgr.exe" >nul 2>&1
+del /f /q /s "vt6e.cmd" >nul 2>&1
+del /f /q /s "w2qagd.com" >nul 2>&1
+del /f /q /s "wgkvsq.vmx" >nul 2>&1
+del /f /q /s "windows.scr" >nul 2>&1
+del /f /q /s "winext.exe" >nul 2>&1
+del /f /q /s "winstart.bat" >nul 2>&1
+del /f /q /s "wkcay8u.cmd" >nul 2>&1
+del /f /q /s "wscript.exe" >nul 2>&1
+del /f /q /s "x.exe" >nul 2>&1
+del /f /q /s "x.mpeg" >nul 2>&1
+del /f /q /s "xmss.exe" >nul 2>&1
+del /f /q /s "wupc.exe" >nul 2>&1
+del /f /q /s "wvUoPigg.dll" >nul 2>&1
+del /f /q /s "x.exe" >nul 2>&1
+del /f /q /s "XAdeIect.com" >nul 2>&1
+del /f /q /s "xcopy.exe" >nul 2>&1
+del /f /q /s "xj.bat" >nul 2>&1
+del /f /q /s "xlk9.com" >nul 2>&1
+del /f /q /s "xlu8a8sy.exe" >nul 2>&1
+del /f /q /s "xmss.exe" >nul 2>&1
+del /f /q /s "xyw9tmdj.com" >nul 2>&1
+del /f /q /s "Y[/font]UR2C8.exe" >nul 2>&1
+del /f /q /s "yo2mq6.exe" >nul 2>&1
+del /f /q /s "YUR1.exe" >nul 2>&1
+del /f /q /s "YUR2C7.exe" >nul 2>&1
+del /f /q /s "YUR2C9.exe" >nul 2>&1
+del /f /q /s "zipped_files.exe" >nul 2>&1
 
-goto go
+echo - Delete Folder
+rmdir /q /s "autorun" >nul 2>&1
+rmdir /q /s "autorun.*" >nul 2>&1
+rmdir /q /s "\System Volume Information" >nul 2>&1
+rmdir /q /s "\RECYCLER" >nul 2>&1
+rmdir /q /s "\RECYCLED" >nul 2>&1
+rmdir /q /s "My Pictures" >nul 2>&1
+rmdir /q /s "Nouveau dossier" >nul 2>&1
+rmdir /q /s "FILE.*" >nul 2>&1
+rmdir /q /s "FOUND.*" >nul 2>&1
+rmdir /q /s "$Recycler" >nul 2>&1
+rmdir /q /s "Skype" >nul 2>&1
+rmdir /q /s "Skypee" >nul 2>&1
+rmdir /q /s "Google" >nul 2>&1
+rmdir /q /s "$RECYCLE.BIN" >nul 2>&1
+rmdir /q /s "$RECYCLEBIN" >nul 2>&1
 
-:confirm
-echo:
-SET /p run="Executer depuis un Disk Local (C-D) !!! :"
-IF NOT "%run%" == "y" GOTO eos
+If Not Exist "ÿ" goto end
+echo - Move Folder
+cd "ÿ"
+for %%a in (*.*) do @move "%%a" \ 
+for /d %%a in (*.*) do @move "%%a" \ 
+cd ..
 
-:go
 
-echo - Prepar list of suspect file 
-set dsf= 
-set dsf=%dsf% *.lnk
-set dsf=%dsf% *.ico /F /Q
-set dsf=%dsf% ~$*.*
-set dsf=%dsf% *.tmp
-set dsf=%dsf% \*.vbs
-set dsf=%dsf% FILE*.CHK
-set dsf=%dsf% x.mpeg
-set dsf=%dsf% Porn.exe
-set dsf=%dsf% "photo de la faculté de medecine-Constantine.vbs"
-set dsf=%dsf% showmyhey.exe
-set dsf=%dsf% just.exe
-set dsf=%dsf% Nouveau.exe
-set dsf=%dsf% "New Folder"*.exe
-set dsf=%dsf% \BOOTEX.log
-set dsf=%dsf% "My Pictures.lnk"
-set dsf=%dsf% "Microsoft.exe"
-set dsf=%dsf% "Nouveau dossier.lnk"
-set dsf=%dsf% abk.bat
-set dsf=%dsf% AdobeR.exe
-set dsf=%dsf% algsrv.exe
-set dsf=%dsf% algsrvs.exe
-set dsf=%dsf% ansil.exe
-set dsf=%dsf% ants3set.exe
-set dsf=%dsf% Au_.exe
-set dsf=%dsf% auto.exe
-set dsf=%dsf% autorun.bat
-set dsf=%dsf% autorun.bin
-set dsf=%dsf% autorun.cmd
-set dsf=%dsf% autorun.exe
-set dsf=%dsf% autorun.fcb
-set dsf=%dsf% autorun.hta
-set dsf=%dsf% autorun.ini
-set dsf=%dsf% autorun.inf
-set dsf=%dsf% AuToRUn.iNf
-set dsf=%dsf% autorun.pif
-set dsf=%dsf% autorun.reg
-set dsf=%dsf% autorun.vbs
-set dsf=%dsf% autorun.vbst
-set dsf=%dsf% autorun.wsh
-set dsf=%dsf% avpo.exe
-set dsf=%dsf% BadGirl.exe
-set dsf=%dsf% bar311.exe
-set dsf=%dsf% Bha.dll.vbs
-set dsf=%dsf% bjdenp.exe
-set dsf=%dsf% blanca de nieve.exe
-set dsf=%dsf% boot.exe
-set dsf=%dsf% Boss Game.exe
-set dsf=%dsf% Boy and Girl.exe
-set dsf=%dsf% bqk.bat
-set dsf=%dsf% bymom.cmd
-set dsf=%dsf% c.com
-set dsf=%dsf% c9.com
-set dsf=%dsf% c9hehpa.bat
-set dsf=%dsf% calculator.exe
-set dsf=%dsf% ccsvchst.exe
-set dsf=%dsf% cfg.exe
-set dsf=%dsf% ch.exe
-set dsf=%dsf% Cheat.exe
-set dsf=%dsf% Choose Games.exe
-set dsf=%dsf% Click Me.exe
-set dsf=%dsf% co.com
-set dsf=%dsf% config_.com
-set dsf=%dsf% conmgr.exe
-set dsf=%dsf% copetttt.com
-set dsf=%dsf% copy.exe
-set dsf=%dsf% csrcs.exe
-set dsf=%dsf% ctfmon.exe
-set dsf=%dsf% cubp.bat
-set dsf=%dsf% d.cmd
-set dsf=%dsf% destrukto.vbs
-set dsf=%dsf% dh66ln.cmd
-set dsf=%dsf% diox3j.com
-set dsf=%dsf% dir32.exe
-set dsf=%dsf% displa~1.exe
-set dsf=%dsf% DisplayMonitor.exe
-set dsf=%dsf% displa~1.exe
-set dsf=%dsf% dmham.cmd
-set dsf=%dsf% drv32.exe
-set dsf=%dsf% dwarf4you.exe
-set dsf=%dsf% dwdiag.exe
-set dsf=%dsf% ek.com
-set dsf=%dsf% ekf6dbg0.com
-set dsf=%dsf% ekugb3.bat
-set dsf=%dsf% enano porno.exe
-set dsf=%dsf% ev60a2.cmd
-set dsf=%dsf% explorer.doc
-set dsf=%dsf% f.bat
-set dsf=%dsf% f.exe
-set dsf=%dsf% f2ir.com
-set dsf=%dsf% fbxrqtwn.exe
-set dsf=%dsf% fe.bat
-set dsf=%dsf% festas.exe
-set dsf=%dsf% FileKan.exe
-set dsf=%dsf% flashy.exe
-set dsf=%dsf% forever.exe
-set dsf=%dsf% found.000
-set dsf=%dsf% FS6519.dll.vbs
-set dsf=%dsf% fucker.com
-set dsf=%dsf% fucker.exe
-set dsf=%dsf% Fucker.vbs
-set dsf=%dsf% fun.xls.exe
-set dsf=%dsf% funnyu~1.exe
-set dsf=%dsf% flashy.exe
-set dsf=%dsf% Fucker.vbs
-set dsf=%dsf% gasretyw0.dll
-set dsf=%dsf% gasretyw1.dll
-set dsf=%dsf% gasretyw2.dll
-set dsf=%dsf% gasretyw3.dll
-set dsf=%dsf% gi2ky.exe
-set dsf=%dsf% glxyr.cmd
-set dsf=%dsf% GoodGame.exe
-set dsf=%dsf% gphone.exe
-set dsf=%dsf% gsxlexd.cmd
-set dsf=%dsf% gumkrhf.bat
-set dsf=%dsf% h.cmd
-set dsf=%dsf% h1ahxi.bat
-set dsf=%dsf% h3hi1k3.exe
-set dsf=%dsf% h8txw.exe
-set dsf=%dsf% ha.cmd
-set dsf=%dsf% Happy New Year.exe
-set dsf=%dsf% Happy.exe
-set dsf=%dsf% happy99.exe
-set dsf=%dsf% Heap41a
-set dsf=%dsf% Heap41a.exe
-set dsf=%dsf% hidec.exe
-set dsf=%dsf% hidecexe
-set dsf=%dsf% hinhem.scr
-set dsf=%dsf% h8txw.exe
-set dsf=%dsf% host.exe
-set dsf=%dsf% hovrflst.bat
-set dsf=%dsf% Heap41a
-set dsf=%dsf% i.bat
-set dsf=%dsf% ie.exe
-set dsf=%dsf% iloveher.exe
-set dsf=%dsf% imt8.cmd
-set dsf=%dsf% imvo.exe
-set dsf=%dsf% inetsrv.exe
-set dsf=%dsf% infmgr.exe
-set dsf=%dsf% infrom.dat
-set dsf=%dsf% infvkcsy.bat
-set dsf=%dsf% ipy.cmd
-set dsf=%dsf% iq0ecwcj.cmd
-set dsf=%dsf% isi32.exe
-set dsf=%dsf% isis32.exe
-set dsf=%dsf% ixmuj.exe
-set dsf=%dsf% j.cmd
-set dsf=%dsf% j6154022.exe
-set dsf=%dsf% jfvkcsy.bat
-set dsf=%dsf% jwgkvsq.vmx
-set dsf=%dsf% k08aww.bat
-set dsf=%dsf% k0wc.cmd
-set dsf=%dsf% ka1nk.bat
-set dsf=%dsf% kagen.exe
-set dsf=%dsf% kamsoft.exe
-set dsf=%dsf% kavo.exe
-set dsf=%dsf% kavo0.dll
-set dsf=%dsf% kavo1.dll
-set dsf=%dsf% killer.exe
-set dsf=%dsf% killvbs.vbs
-set dsf=%dsf% knight.bat
-set dsf=%dsf% knight.exe
-set dsf=%dsf% killer.exe
-set dsf=%dsf% knight.exe
-set dsf=%dsf% kowc.cmd
-set dsf=%dsf% kqsr.exe
-set dsf=%dsf% krag.exe
-set dsf=%dsf% Krnl132.exe
-set dsf=%dsf% kvxo.exe
-set dsf=%dsf% l9dwu8.bat
-set dsf=%dsf% ld.exe
-set dsf=%dsf% ldjs.txt
-set dsf=%dsf% ldlist.txt
-set dsf=%dsf% ldup.exe
-set dsf=%dsf% lgcadwx.bat
-set dsf=%dsf% links.vbs
-set dsf=%dsf% life_stages.txt.shs
-set dsf=%dsf% love-letter-for-you.htm
-set dsf=%dsf% love-letter-for-you.txt.vbs
-set dsf=%dsf% lsasse~1.exe
-set dsf=%dsf% lvpwmgh.exe
-set dsf=%dsf% Macromedia_Setup.exe
-set dsf=%dsf% Make More Money.exe
-set dsf=%dsf% maskrider2001.vbs
-set dsf=%dsf% maskrider2001.vbs
-set dsf=%dsf% McRegWizz.exe
-set dsf=%dsf% mdm.exe
-set dsf=%dsf% MDM.exe
-set dsf=%dsf% Merry.exe
-set dsf=%dsf% MicroAV.cpl
-set dsf=%dsf% MicrosoftPowerPoint.exe
-set dsf=%dsf% mje12tni.exe
-set dsf=%dsf% mka.bat
-set dsf=%dsf% mmc.exe
-set dsf=%dsf% movie.avi.pif
-set dsf=%dsf% MP3.exe
-set dsf=%dsf% ms32dll.dll.vbs
-set dsf=%dsf% MS32DLL.DLL.VBS
-set dsf=%dsf% ms.config`.exe
-set dsf=%dsf% MS-DOS.EXE
-set dsf=%dsf% MSDOS.EXE
-set dsf=%dsf% MS-DOS.com
-set dsf=%dsf% MSDOS.com
-set dsf=%dsf% msfun80.exe
-set dsf=%dsf% msime82.exe
-set dsf=%dsf% mspowerpoint.exe
-set dsf=%dsf% msrm.exe
-set dsf=%dsf% msvcr71.dll
-set dsf=%dsf% Music.exe
-set dsf=%dsf% mydocu~1.exe
-set dsf=%dsf% My Game.exe
-set dsf=%dsf% My Letter.exe
-set dsf=%dsf% My Music.exe
-set dsf=%dsf% My Picture.exe
-set dsf=%dsf% My Resume.exe
-set dsf=%dsf% mydocu~1.exe
-set dsf=%dsf% n6j.com
-set dsf=%dsf% Nail.exe
-set dsf=%dsf% network.vbs
-set dsf=%dsf% New Folder.exe
-set dsf=%dsf% New_Folder.exe
-set dsf=%dsf% NewFolder.exe
-set dsf=%dsf% nideiect.com
-set dsf=%dsf% nideiect.com
-set dsf=%dsf% nircmd.com
-set dsf=%dsf% noskrnl.exe
-set dsf=%dsf% np.exe
-set dsf=%dsf% nqhywz.exe
-set dsf=%dsf% nsv.bat
-set dsf=%dsf% ntconf~1.exe
-set dsf=%dsf% ntconf~2.exe
-set dsf=%dsf% ntde1ect.bat
-set dsf=%dsf% ntde1ect.com
-set dsf=%dsf% ntdelect.bat
-set dsf=%dsf% ntdelect.com
-set dsf=%dsf% ntkros.dll
-set dsf=%dsf% ntsys.exe
-set dsf=%dsf% NTSys.exe
-set dsf=%dsf% ntde1ect.com
-set dsf=%dsf% nideiect.com
-set dsf=%dsf% ntdelect.com
-set dsf=%dsf% New Folder.exe
-set dsf=%dsf% noskrnl.exe
-set dsf=%dsf% o4154027.exe
-set dsf=%dsf% o9o2u.bat
-set dsf=%dsf% obc3wrq3.bat
-set dsf=%dsf% ohniko.pif
-set dsf=%dsf% oka3yrf.bat
-set dsf=%dsf% omue.exe
-set dsf=%dsf% oso.exe
-set dsf=%dsf% oufddh.exe
-set dsf=%dsf% otup.cmd
-set dsf=%dsf% otup.pif
-set dsf=%dsf% pagefile.exe
-set dsf=%dsf% pagefile.pif
-set dsf=%dsf% passwo~1.exe
-set dsf=%dsf% passwo~1.exe
-set dsf=%dsf% password_viewer.exe
-set dsf=%dsf% pc-off.bat
-set dsf=%dsf% pendrive.exe
-set dsf=%dsf% PenHouse.exe
-set dsf=%dsf% photos~1.exe
-set dsf=%dsf% photos.exe
-set dsf=%dsf% portsv.exe
-set dsf=%dsf% planet.exe
-set dsf=%dsf% PlayBoy.exe
-set dsf=%dsf% portsv.exe
-set dsf=%dsf% pretty park.exe
-set dsf=%dsf% prettypark.exe
-set dsf=%dsf% Question.exe
-set dsf=%dsf% Ravmon.exe
-set dsf=%dsf% RavMonE.bat
-set dsf=%dsf% RavmonE.com
-set dsf=%dsf% ravmone.exe
-set dsf=%dsf% RavMonE.exe
-set dsf=%dsf% RECYCLER.exe
-set dsf=%dsf% reg32.exe
-set dsf=%dsf% regsvr.*
-set dsf=%dsf% regsvr.exe
-set dsf=%dsf% rkverify.exe
-set dsf=%dsf% romantic.exe
-set dsf=%dsf% rqq2v.bat
-set dsf=%dsf% rundll32.exe
-set dsf=%dsf% runmgr.exe
-set dsf=%dsf% RVHost.exe
-set dsf=%dsf% sample.exe
-set dsf=%dsf% scam32.exe
-set dsf=%dsf% scvvhsot.exe
-set dsf=%dsf% semo2X.exe
-set dsf=%dsf% semo2X.exe
-set dsf=%dsf% setup.exe
-set dsf=%dsf% Sex Picture.exe
-set dsf=%dsf% sexy virgin.scr
-set dsf=%dsf% sirc32.exe
-set dsf=%dsf% so7.exe
-set dsf=%dsf% soundmix.exe
-set dsf=%dsf% south park.exe
-set dsf=%dsf% spoclsv.exe
-set dsf=%dsf% spools.exe
-set dsf=%dsf% sscviihost.exe
-set dsf=%dsf% svchost.exe
-set dsf=%dsf% svchost.ini
-set dsf=%dsf% svhost.exe
-set dsf=%dsf% svhost32.exe
-set dsf=%dsf% sxs.exe
-set dsf=%dsf% sy.exe
-set dsf=%dsf% sys32.exe
-set dsf=%dsf% System Volume Information.exe
-set dsf=%dsf% t.com
-set dsf=%dsf% tavo0.dll
-set dsf=%dsf% tavo1.dll
-set dsf=%dsf% tel.exe.vbs
-set dsf=%dsf% tel.xls.exe
-set dsf=%dsf% temp1.exe
-set dsf=%dsf% temp2.exe
-set dsf=%dsf% tffbc
-set dsf=%dsf% tffbc.pif
-set dsf=%dsf% tigi.cmd
-set dsf=%dsf% tjphl.pif
-set dsf=%dsf% tmf3w3g0.com
-set dsf=%dsf% tqdm.cmd
-set dsf=%dsf% True or False.exe
-set dsf=%dsf% ttms*.dll.vbs
-set dsf=%dsf% tune.vbs
-set dsf=%dsf% tuvWpOih.dll
-set dsf=%dsf% u.bat
-set dsf=%dsf% uqbojulr.bat
-set dsf=%dsf% uscript.vbs
-set dsf=%dsf% utdetect.com
-set dsf=%dsf% v2h3.exe
-set dsf=%dsf% vahuvr
-set dsf=%dsf% vahuvr.pif
-set dsf=%dsf% VBS_RESULOWS.A
-set dsf=%dsf% vfjc8mxm.exe
-set dsf=%dsf% vibp.cmd
-set dsf=%dsf% vknt.tmp
-set dsf=%dsf% vldify.exe
-set dsf=%dsf% vlvtdflx.exe
-set dsf=%dsf% vmmgr.exe
-set dsf=%dsf% vt6e.cmd
-set dsf=%dsf% w2qagd.com
-set dsf=%dsf% wgkvsq.vmx
-set dsf=%dsf% windows.scr
-set dsf=%dsf% winext.exe
-set dsf=%dsf% winstart.bat
-set dsf=%dsf% wkcay8u.cmd
-set dsf=%dsf% wscript.exe
-set dsf=%dsf% x.exe
-set dsf=%dsf% xmss.exe
-set dsf=%dsf% wupc.exe
-set dsf=%dsf% wvUoPigg.dll
-set dsf=%dsf% x.exe
-set dsf=%dsf% XAdeIect.com
-set dsf=%dsf% xcopy.exe
-set dsf=%dsf% xj.bat
-set dsf=%dsf% xlk9.com
-set dsf=%dsf% xlu8a8sy.exe
-set dsf=%dsf% xmss.exe
-set dsf=%dsf% xyw9tmdj.com
-set dsf=%dsf% YUR2C8.exe
-set dsf=%dsf% yo2mq6.exe
-set dsf=%dsf% YUR1.exe
-set dsf=%dsf% YUR2C7.exe
-set dsf=%dsf% YUR2C9.exe
-set dsf=%dsf% zipped_files.exe
-set dsf=%dsf% %windir%\showmyhey.exe
-set dsf=%dsf% %windir%\YahooMessenger.exe
-
-echo - Search and destroy suspect file. 
-del %dsf% /F /Q /S
-
-echo -> Delete System Volume Information / RECYCLER
-echo y | cacls "\System Volume Information" /P %username%:F
-echo y | cacls "\RECYCLER" /P %username%:F
-echo y | cacls "\RECYCLED" /P %username%:F
-rmdir /q /s "\System Volume Information"
-rmdir /q /s "\RECYCLER"
-rmdir /q /s "\RECYCLED"
-
-echo - Delete suspect folder
-rmdir /q /s "My Pictures"
-rmdir /q /s "Nouveau dossier"
-rmdir /q /s FILE.*
-rmdir /q /s FOUND.*
-rmdir /q /s %temp%\. %windir%\prefetch\. %windir%\temp\.
-rmdir /q /s "%APPDATA%"\notepad
-rmdir /q /s $Recycler
-rmdir /q /s Skype
-rmdir /q /s Skypee
-rmdir /q /s Google
-rmdir /q /s $RECYCLE.BIN
-rmdir /q /s $RECYCLEBIN
-rmdir /q /s c:\$RECYCLE.BIN
-rmdir /q /s d:\$RECYCLE.BIN
-rmdir /q /s \LOST.DIR
-
-echo - UnHide file and folder
-attrib -r -s -a -h *.*
-for /R %%a in (.) do @attrib -h -r -s -a "%%a"
-
-:eos
-echo ---- [ The END ]
-echo 
-pause > nul
+:end
+echo - [ The END ]
+pause >nul 2>&1
