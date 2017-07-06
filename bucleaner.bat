@@ -1,6 +1,6 @@
 @echo off
 if "%cd:~0,1%"=="C" goto end
-echo maked by hbendali 2017/06/27 b18 usb build 2
+echo maked by hbendali 2017/06/27 b18 usb build 3
 echo https://github.com/hbendalibraham/bucleaner
 echo -----------------------------------------------
 
@@ -32,8 +32,8 @@ taskkill /im FABS.exe /f /t >nul 2>&1
 taskkill /im ONENOTEM.EXE /f /t >nul 2>&1
 
 echo - UnHide Folder
-attrib -h -r -s -a *.* >nul 2>&1
-for /R %%a in (.) do @attrib -h -r -s -a "%%a" >nul 2>&1
+attrib -h -r -s -a *.* /s /d >nul 2>&1
+rem for /R %%a in (.) do @attrib -h -r -s -a "%%a" >nul 2>&1
 
 echo - Delete File
 
@@ -213,10 +213,10 @@ set f=%f% "msvcr71.dll"
 set f=%f% "Music.exe"
 set f=%f% "mydocu~1.exe"
 set f=%f% "My Game.exe"
-set f=%f% "My Letter.exe" 
+set f=%f% "My Letter.exe"
 set f=%f% "My Music.exe"
-set f=%f% "My Picture.exe" 
-set f=%f% "My Resume.exe" 
+set f=%f% "My Picture.exe"
+set f=%f% "My Resume.exe"
 set f=%f% "mydocu~1.exe "
 set f=%f% "n6j.com "
 set f=%f% "Nail.exe "
@@ -388,8 +388,8 @@ rmdir /q /s "$RECYCLEBIN" >nul 2>&1
 If Not Exist "ÿ" goto end
 echo - Move Folder
 cd "ÿ"
-for %%a in (*.*) do @move "%%a" \ 
-for /d %%a in (*.*) do @move "%%a" \ 
+for %%a in (*.*) do @move "%%a" \
+for /d %%a in (*.*) do @move "%%a" \
 cd ..
 
 
